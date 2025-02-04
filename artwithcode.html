@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraft</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/theme/dracula.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lacquer&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/codemirror.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/mode/javascript/javascript.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <div class="top-bar">
+        <h1 class="logo">CodeCraft</h1>
+        <ul class="menu">
+            <li id="fileMenu">File</li>
+            <li>Edit</li>
+            <li>Sketch</li>
+            <li>Help</li>
+        </ul>
+    </div>
+
+    <!-- Main Content (Code Editor + Live Preview) -->
+    <div class="container">
+        <!-- Code Editor -->
+        <div class="editor">
+            <div class="editor-controls">
+                <button id="playButton">▶</button>
+                <button id="pauseButton">⏸</button>
+                <button id="saveButton">💾 Save</button>
+                <button id="loadButton">📂 Load</button>
+                <select id="languageSelect">
+                    <option value="javascript">JavaScript</option>
+                    <option value="htmlmixed">HTML</option>
+                    <option value="css">CSS</option>
+                </select>
+            </div>
+            <textarea id="code"></textarea>
+        </div>
+
+        <!-- Live Preview Section -->
+        <div class="preview">
+            <span>
+                <h2 class="live">Live Preview</h2>
+            </span>
+            <div id="livePreview" style="width: 100%; height: 100%; border: none;"></div>
+        </div>
+    </div>
+</body>
+</html>

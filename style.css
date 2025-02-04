@@ -1,0 +1,144 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    position: relative;
+    overflow-x: hidden;
+    background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2B1xgtVifts7ePS1hwe_i-QzMtIrQWG0BAz9jxwLAci-4J7bCA0AOYOcpT-gWoibrFR26hmkYqe0n-D9uYhzu_MnxUqZmYL6ytYrjQYSADaGh4QJJ3-EF1mJIHVoeDK822Him1QrSHJPoQYxhKkKCU47PU6GNcgFrQHn_d9wmacZ8WUGcmd06A4Fzlg/s7000/AI-GENERATED-WALLPAPER-4K.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -100;
+}
+
+/* Top Navigation Bar */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    position: relative;
+    z-index: 10;
+}
+.CodeMirror {
+    height: 550px;
+}
+.cm-s-dracula .CodeMirror-gutters, .cm-s-dracula.CodeMirror {
+    background-color: rgba(49, 46, 46, 0.7) !important; /* Black Transparent */
+    color: #f8f8f2 !important;
+    border: none;
+    border-radius: 10px;
+}
+.logo {
+    font-family: 'Lacquer', cursive;
+    margin-left: 20px;
+}
+
+/* Menu Items */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+    padding: 0;
+    padding-right: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+    font-size: 20px;
+    align-items: center;
+}
+
+.menu li {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.menu li:hover {
+    color: #ffcc00;
+}
+
+/* Code Editor + Live Preview Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    height: 80vh; /* Increased height */
+}
+
+/* Code Editor */
+.editor {
+    width: 50%; /* Reduced width slightly */
+    height: 100%;
+}
+
+textarea {
+    height: 100%;
+}
+
+/* Live Preview Section */
+.preview {
+    width: 45%; /* Space for preview */
+    height: 550px;
+    background-color: rgba(49, 46, 46, 0.7);
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Controls Container */
+.editor-controls {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+/* Play & Pause Buttons */
+#playButton, #pauseButton, #saveButton, #loadButton {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(126, 123, 123, 0.759);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+#playButton:hover, #pauseButton:hover, #saveButton:hover, #loadButton:hover {
+    transform: scale(1.1);
+    background-color: rgba(40, 36, 36, 0.759);
+}
+
+/* Language Dropdown */
+#languageSelect {
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(126, 123, 123, 0.759);
+    color: white;
+    cursor: pointer;
+}
+#languageSelect:hover {
+    transform: scale(1.1);
+    background-color: rgba(40, 36, 36, 0.759);
+}
+
+.preview .live {
+    font-size: 24px;
+    color: #f8f8f2;
+    padding-left: 100px;
+}
+
+.preview span {
+    display: inline-block;
+    background-color: rgba(49, 46, 46, 0.7);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+}
